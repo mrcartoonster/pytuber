@@ -5,8 +5,11 @@ import typer
 from typing_extensions import Annotated
 from youtube_func import youtube
 
+app = typer.Typer()
 
-def main(video: List[Annotated[str, typer.Argument()]]):
+
+@app.command()
+def url(video: List[Annotated[str, typer.Argument()]]):
     """
     Simple pytube.
     """
@@ -15,4 +18,4 @@ def main(video: List[Annotated[str, typer.Argument()]]):
 
 
 if __name__ == "__main__":
-    typer.run(main)
+    app()
