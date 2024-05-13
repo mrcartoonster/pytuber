@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "pytuber"
 version = "0.1.0"
-description = ""
+description = "Typer Pytube clone for downloading YouTube videos."
 authors = ["Evan Baird <evanbaird@evans-mbp.lan>"]
 readme = "README.md"
 
